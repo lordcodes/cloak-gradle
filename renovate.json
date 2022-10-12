@@ -1,0 +1,8 @@
+{
+    "labels": [
+        "type:dependencies"
+    ],
+    "extends": [
+        "config:base"
+    ]
+}
