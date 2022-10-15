@@ -1,0 +1,25 @@
+# MacOS
+.DS_Store
+
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (SDK path, etc)
+local.properties
+
+# IntelliJ / Android Studio
+*.iml
+/.idea/caches
+/.idea/deploymentTargetDropDown.xml
+/.idea/dictionaries
+/.idea/libraries
+/.idea/androidTestResultsUserPreferences.xml
+/.idea/assetWizardSettings.xml
+/.idea/compiler.xml
+/.idea/jarRepositories.xml
+/.idea/kotlinc.xml
+/.idea/gradle.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/workspace.xml
