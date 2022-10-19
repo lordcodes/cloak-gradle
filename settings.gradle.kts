@@ -21,6 +21,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "cloak-gradle"
 
-includeBuild("cloak-plugin")
+includeBuild("build-logic")
+includeBuild("cloak-gradle-plugin")
 
 include(":example")

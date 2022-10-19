@@ -8,7 +8,7 @@ group = "com.lordcodes.cloakgradle.buildlogic"
 dependencies {
     implementation(libs.kotlin.gradlePlugin)
     implementation(libs.kotlinter)
-    implementation(libs.detekt)
+    implementation(libs.detekt.gradlePlugin)
 }
 
 java {

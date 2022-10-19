@@ -1,8 +1,7 @@
 @file:Suppress("UnstableApiUsage")
 
-import com.getbusy.android.buildlogic.convention.applyLinting
-import com.getbusy.android.buildlogic.convention.configureKotlinModule
-import com.getbusy.android.buildlogic.convention.moduleReplacements
+import com.lordcodes.cloakgradle.buildlogic.convention.applyLinting
+import com.lordcodes.cloakgradle.buildlogic.convention.configureKotlinModule
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.dependencies
@@ -15,8 +14,8 @@ class GradlePluginConventionPlugin : Plugin<Project> {
 }
 
 private fun Project.applyConventions() {
-    pluginManager.apply("kotlin.jvm")
-    
+    pluginManager.apply("org.jetbrains.kotlin.jvm")
+
     configureKotlinModule()
     applyLinting()
 }

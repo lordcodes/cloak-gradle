@@ -1,4 +1,4 @@
-package com.getbusy.android.buildlogic.convention
+package com.lordcodes.cloakgradle.buildlogic.convention
 
 import org.gradle.api.JavaVersion
 
