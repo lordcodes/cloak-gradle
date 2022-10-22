@@ -6,7 +6,3 @@ plugins {
 tasks.register("clean", Delete::class.java) {
     delete(rootProject.buildDir)
 }
-
-tasks.wrapper {
-    distributionType = Wrapper.DistributionType.ALL
-}

@@ -13,6 +13,10 @@ dependencies {
 group = property("GROUP").toString()
 version = property("VERSION").toString()
 
+detekt {
+    config = rootProject.files("../config/detekt/detekt.yml")
+}
+
 gradlePlugin {
     plugins {
         create(property("ID").toString()) {
