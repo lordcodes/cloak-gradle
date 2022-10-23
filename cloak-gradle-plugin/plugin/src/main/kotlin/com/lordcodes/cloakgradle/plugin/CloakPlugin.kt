@@ -7,7 +7,10 @@ abstract class CloakPlugin : Plugin<Project> {
     override fun apply(project: Project) {
         val extension = project.extensions.create(EXTENSION_NAME, CloakExtension::class.java, project)
 
-        project.tasks.register("cloakKey", CreateCloakKeyTask::class.java) {
+        project.tasks.register("cloakKey", CreateKeyCloakTask::class.java) {
+            it.keyFile.set(extension.encryptionKeyFile)
+        }
+        project.tasks.register("cloakEncrypt", EncryptSecretCloakTask::class.java) {
             it.keyFile.set(extension.encryptionKeyFile)
         }
     }

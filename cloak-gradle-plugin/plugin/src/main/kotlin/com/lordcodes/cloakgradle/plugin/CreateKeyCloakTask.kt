@@ -10,7 +10,7 @@ import org.gradle.api.file.RegularFileProperty
 import org.gradle.api.tasks.OutputFile
 import org.gradle.api.tasks.TaskAction
 
-abstract class CreateCloakKeyTask : DefaultTask() {
+abstract class CreateKeyCloakTask : DefaultTask() {
     init {
         description = "Create an encryption key to use within Cloak and your application"
         group = "secrets"
