@@ -23,3 +23,6 @@ local.properties
 /.idea/misc.xml
 /.idea/modules.xml
 /.idea/workspace.xml
+
+# Cloak
+config/cloak/.encryption-key.json

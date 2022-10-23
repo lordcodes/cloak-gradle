@@ -6,6 +6,7 @@ plugins {
 
 dependencies {
     implementation(kotlin("stdlib"))
+    implementation(libs.tink)
 
     testImplementation(libs.junit)
 }
