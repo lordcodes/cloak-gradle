@@ -1,12 +1,17 @@
 package com.lordcodes.cloakgradle.plugin.encryption
 
-import com.google.crypto.tink.*
+import com.google.crypto.tink.Aead
+import com.google.crypto.tink.CleartextKeysetHandle
+import com.google.crypto.tink.JsonKeysetReader
+import com.google.crypto.tink.JsonKeysetWriter
+import com.google.crypto.tink.KeyTemplates
+import com.google.crypto.tink.KeysetHandle
 import com.google.crypto.tink.aead.AeadConfig
 import org.gradle.api.logging.Logger
 import java.io.File
 import java.io.IOException
 import java.security.GeneralSecurityException
-import java.util.*
+import java.util.Base64
 
 class EncryptionEngine(
     private val logger: Logger

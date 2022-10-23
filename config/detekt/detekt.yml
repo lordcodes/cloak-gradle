@@ -151,6 +151,7 @@ style:
   RedundantVisibilityModifierRule:
     active: true
   ReturnCount:
+    active: false
     max: 3
     excludeGuardClauses: true
   SpacingBetweenPackageAndImports:
