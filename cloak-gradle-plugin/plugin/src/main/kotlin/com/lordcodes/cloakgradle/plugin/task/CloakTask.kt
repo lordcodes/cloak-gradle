@@ -1,4 +1,4 @@
-package com.lordcodes.cloakgradle.plugin
+package com.lordcodes.cloakgradle.plugin.task
 
 import org.gradle.api.DefaultTask
 import org.gradle.api.file.RegularFileProperty

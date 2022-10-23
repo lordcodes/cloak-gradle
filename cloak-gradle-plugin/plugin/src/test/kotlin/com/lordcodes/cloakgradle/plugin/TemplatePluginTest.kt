@@ -1,5 +1,6 @@
 package com.lordcodes.cloakgradle.plugin
 
+import com.lordcodes.cloakgradle.plugin.task.CloakTask
 import org.gradle.testfixtures.ProjectBuilder
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotNull
