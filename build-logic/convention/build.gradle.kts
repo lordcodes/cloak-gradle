@@ -22,9 +22,5 @@ gradlePlugin {
             id = "convention.gradle.plugin"
             implementationClass = "GradlePluginConventionPlugin"
         }
-        register("root") {
-            id = "convention.root"
-            implementationClass = "RootConventionPlugin"
-        }
     }
 }
