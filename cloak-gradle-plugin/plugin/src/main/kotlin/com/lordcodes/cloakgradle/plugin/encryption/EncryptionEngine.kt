@@ -13,17 +13,17 @@ import java.io.IOException
 import java.security.GeneralSecurityException
 import java.util.Base64
 
-class EncryptionEngine(
+internal class EncryptionEngine(
     private val logger: Logger
 ) {
-    fun createEncryptionKey(file: File) {
+    internal fun createEncryptionKey(file: File) {
         AeadConfig.register()
 
         val keySetHandle = KeysetHandle.generateNew(KeyTemplates.get("AES256_GCM"))
         CleartextKeysetHandle.write(keySetHandle, JsonKeysetWriter.withFile(file))
     }
 
-    fun encrypt(plaintextSecret: String, keyFile: File): String? {
+    internal fun encrypt(plaintextSecret: String, keyFile: File): String? {
         logger.lifecycle("\uD83D\uDD20 Encrypting $plaintextSecret")
 
         logger.debug("Setting up Tink")
@@ -41,7 +41,7 @@ class EncryptionEngine(
         return Base64.getEncoder().encodeToString(encryptedBytes)
     }
 
-    fun decrypt(encryptedSecret: String, keyFile: File): String? {
+    internal fun decrypt(encryptedSecret: String, keyFile: File): String? {
         logger.lifecycle("\uD83D\uDD20 Decrypting $encryptedSecret")
 
         logger.debug("Setting up Tink")
